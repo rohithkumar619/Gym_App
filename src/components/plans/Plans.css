@@ -1,0 +1,164 @@
+.plans-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.plans-header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.plans-header > span {
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+.plans-header > span:nth-child(2) {
+  color: white;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
+}
+.plans > div:nth-child(2) {
+  background-color: var(--orange);
+}
+.plans > div:nth-child(1) {
+  height: 30rem;
+  width: 16rem;
+}
+.plans > div:nth-child(3) {
+  height: 30rem;
+  width: 16rem;
+}
+.plan {
+  display: flex;
+  background-color: grey;
+  width: 18rem;
+  height: 32rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+.plan:hover {
+  box-shadow: 2px 2px 5px 5px var(--orange);
+}
+.plans > div:nth-child(2):hover {
+  box-shadow: 2px 2px 5px 5px white;
+}
+.plan > span {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+.plan > h2 {
+  font-size: 3rem;
+  color: white;
+}
+.plan > button {
+  border: 0;
+  width: 260px;
+  height: 60px;
+  margin-top: 30px;
+  color: orange;
+  font-weight: bold;
+  font-size: 17px;
+}
+.plan > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.plan > div > span {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.plan > div > img {
+  width: 1.5rem;
+}
+.inr {
+  font-size: 2rem;
+  margin-left: 0.4rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+}
+.features > div {
+  display: flex;
+  align-items: center;
+}
+.features > div > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.features > div > p {
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+.plan-blur1 {
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0rem;
+}
+.plan-blur2 {
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: -5rem;
+}
+@media (max-width: 768px) {
+  .plans-header {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  .plans-header span {
+    font-size: 1.7rem;
+  }
+  .plan {
+    width: 14rem;
+    height: 25rem;
+  }
+  .plans {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .plans > div:nth-child(1) {
+    height: 25rem;
+    width: 12rem;
+  }
+  .plans > div:nth-child(3) {
+    height: 25rem;
+    width: 12rem;
+  }
+  .plan > button {
+    width: 10rem;
+    margin-left: 1rem;
+    height: 30px;
+  }
+  .plan > span {
+    font-size: 1rem;
+  }
+  .plan > h2 {
+    font-size: 2rem;
+  }
+  .features > div img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .features > div p {
+    font-size: 1rem;
+  }
+}
